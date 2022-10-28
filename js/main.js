@@ -96,13 +96,14 @@ document.addEventListener("click", (e) => {
         // ----> Aqui podemos testar
 
         parentElement.classList.toggle("done"); // Adicionando / tirando classe de "done" à tarefa que recebeu o clique, para que
-        // ela fique com o estilo CSS de tarefa finalizada
-        
+        // ela fique com o estilo CSS de tarefa finalizada   
     }
+     // ----> Aqui podemos testar
 
 
     if (targetElement.classList.contains("removeToDo")) { // Verificando se o elemento clicado contém a classe removeToDo
-        parentElement.remove(); // Remove o elemento pai do documento
+        parentElement.remove(); // Remove o elemento pai do documento, no caso, o pai do botão clicado, é a ficha de tarefa
     }
+     // ----> Aqui podemos testar
 
 })
