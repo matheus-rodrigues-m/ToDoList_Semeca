@@ -1,0 +1,224 @@
+/* Padronização geral do documento */
+
+* {
+    padding: 0%;
+    margin: 0%;
+
+    font-family: Helvetica;
+    color: #333333;
+
+    box-sizing: border-box;
+
+}
+
+
+/* Estilização do corpo do documento, o "body" elemento que contém todos os outros */
+
+body {
+    background-image: url("../images/night.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Estilização padrão para botões */
+
+button {
+    background-color: #2d65b9;
+    color: #fdfdfd;
+    border: none;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .3s;
+
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #102f5e
+}
+
+button:hover > i {
+    color: #fdfdfd;
+}
+
+button i {
+    color: #fdfdfd;
+    font-weight: bold;
+
+    /* Este próximo comando não deixa que clique no ícone dentro do botão, então o clique vai no botão em si */
+    pointer-events: none;
+}
+
+
+/* Configurações dos outros elementos, sendo as caixas de texto e a caixa de seleção */
+
+input, select {
+    padding: .25rem 0.5rem;
+
+}
+
+
+/* Classe para esconder elementos que forem necessários */
+
+.hide {
+    display: none;
+}
+
+
+/* Definindo o espaço ocupado pelo container do todo */
+
+.todo-container {
+    max-width: 600px;
+    margin: 3rem auto 0;
+    padding: 1.5rem;
+    border-radius: 22px;
+
+    background-color: #fdfdfd;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.todo-container header {
+    text-align: center;
+
+    padding: 0 1rem 1rem;
+
+    border-bottom: 1px solid #aaaaaa;
+}
+
+
+/* Formulário da Todo List (adicionar tarefa e editar tarefa) */
+
+#todo-form {
+
+    padding: 1rem;
+
+    /* border-bottom: 1px solid #aaaaaa; */
+}
+
+#todo-form p {
+    margin-bottom: .5rem;
+
+    font-weight: bold;
+}
+
+
+/* Seção do formulário, basicamente os seus elementos (display flex para ir com o flex-direction: row) */
+
+.formSection {
+    display: flex;
+}
+
+.formSection input {
+    margin-right: .3rem;
+}
+
+
+
+/* TOOLBAR DA TODOLIST (FILTRO E PESQUISA) */
+
+#toolbar {
+    padding: 1rem;
+    border-bottom: 1px solid #aaaaaa;
+
+    display: flex;
+}
+
+#toolbar h4 {
+    margin-bottom: .5rem;
+}
+
+/* Parte da pesquisa da toolbar */
+
+#search {
+    /* border-right: 1px solid #aaaaaa; */
+    padding-right: 1rem;
+    margin-right: 1rem;
+
+    width: 65%;
+    display: flex;
+    /* column porque pesquisar em cima, elementos embaixo */
+    flex-direction: column;
+}
+
+#search form {
+    display: flex;
+}
+
+#search input { 
+    width: 100%;
+    margin-right: 0.3rem;
+}
+
+#filter {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select {
+    flex: 1;
+    /* Usado para definir que a largura do select será o tamanho inteiro do flexbox */
+}
+
+
+
+/* TODO LIST - ESTILIZANDO A LISTA DE TAREFAS EM SI */
+
+/* Cada bloquinho de todo */
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    padding: 1rem;
+    border-bottom: 1px solid #aaaaaa;
+
+    transition: .3s;
+}
+
+.todo h3 {
+    flex: 1;
+    /* Este Flex: 1 vai deixar o texto da tarefa com a maior largura possível, e deixar um espaço mínimo para os botões */
+
+    font-size: .9rem;
+}
+
+.todo button {
+    margin-left: .4rem;
+}
+
+
+/* Criando uma classe pra quando a tarefa for concluída hihihi */
+
+.done {
+    background-color: #5a5a5a;
+}
+
+.done h3 {
+    color: #fdfdfd;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.done button {
+    background-color: #333333;
+}
+
+
+
+
+#todoList h2 {
+    text-align: center;
+    margin-top: 1rem;
+}
