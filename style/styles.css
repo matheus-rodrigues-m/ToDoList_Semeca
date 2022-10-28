@@ -18,6 +18,7 @@ body {
     background-image: url("../images/night.jpg");
     background-position: center;
     background-size: cover;
+    /* background-repeat: no-repeat; */
 }
 
 
@@ -61,7 +62,13 @@ button i {
 
 input, select {
     padding: .25rem 0.5rem;
+    border-radius: 3px;
 
+    background-color: rgba(255, 255, 255, .4);
+
+    border: none;
+
+    color: black;
 }
 
 
@@ -80,10 +87,15 @@ input, select {
     padding: 1.5rem;
     border-radius: 22px;
 
-    background-color: #fdfdfd;
+    /* background-color: #fdfdfd; */
+    background-color: rgba(255, 255, 255, .2);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
 
     display: flex;
     flex-direction: column;
+
+    box-shadow: 0px 0px 25px #333333 ;
 }
 
 
@@ -92,7 +104,7 @@ input, select {
 
     padding: 0 1rem 1rem;
 
-    border-bottom: 1px solid #aaaaaa;
+    border-bottom: 1px solid #333333;
 }
 
 
@@ -185,6 +197,12 @@ input, select {
     border-bottom: 1px solid #aaaaaa;
 
     transition: .3s;
+
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: 5px;
+    border: none;
+
+    margin-bottom: 1%;
 }
 
 .todo h3 {
@@ -202,7 +220,7 @@ input, select {
 /* Criando uma classe pra quando a tarefa for concluída hihihi */
 
 .done {
-    background-color: #5a5a5a;
+    background-color: rgba(23, 23, 23, .6)
 }
 
 .done h3 {
@@ -221,4 +239,9 @@ input, select {
 #todoList h2 {
     text-align: center;
     margin-top: 1rem;
+}
+
+
+#todoList {
+    padding: 1rem;
 }
