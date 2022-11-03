@@ -105,5 +105,4 @@ document.addEventListener("click", (e) => {
         parentElement.remove(); // Remove o elemento pai do documento, no caso, o pai do botão clicado, é a ficha de tarefa
     }
      // ----> Aqui podemos testar
-
 })

@@ -15,10 +15,11 @@
 /* Estilização do corpo do documento, o "body" elemento que contém todos os outros */
 
 body {
-    background-image: url("../images/night.jpg");
-    background-position: center;
+    background-image: url("https://images.pexels.com/photos/633198/pexels-photo-633198.jpeg?cs=srgb&dl=pexels-tyler-lastovich-633198.jpg&fm=jpg");
+    /* background-position: center; */
     background-size: cover;
     /* background-repeat: no-repeat; */
+    /* width: 100%; */
 }
 
 
@@ -64,9 +65,11 @@ input, select {
     padding: .25rem 0.5rem;
     border-radius: 3px;
 
-    background-color: rgba(255, 255, 255, .4);
+    /* background-color: rgba(255, 255, 255, .4); */
 
-    border: none;
+    background-color: #f7f7f7;;
+
+    border: solid 1px #333333;
 
     color: black;
 }
@@ -88,9 +91,11 @@ input, select {
     border-radius: 22px;
 
     /* background-color: #fdfdfd; */
-    background-color: rgba(255, 255, 255, .2);
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
+    /* background-color: rgba(255, 255, 255, .2); */
+    /* -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px); */
+
+    background-color: white;
 
     display: flex;
     flex-direction: column;
@@ -198,7 +203,8 @@ input, select {
 
     transition: .3s;
 
-    background-color: rgba(255, 255, 255, .6);
+    /* background-color: rgba(255, 255, 255, .6); */
+    background-color: #e7e7e7;
     border-radius: 5px;
     border: none;
 
@@ -220,7 +226,7 @@ input, select {
 /* Criando uma classe pra quando a tarefa for concluída hihihi */
 
 .done {
-    background-color: rgba(23, 23, 23, .6)
+    background-color: #636363;
 }
 
 .done h3 {
